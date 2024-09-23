@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 파일 경로, CSS 셀렉터
     const sections = [
-        { url: '/footer.html', selector: '#footer' },
-        { url: '/header.html', selector: '#header' },
-        { url: '/main/m-1.html', selector: '.m-1' },
-        { url: '/main/m-2.html', selector: '.m-2' },
-        { url: '/main/m-3.html', selector: '.m-3' },
-        { url: '/main/m-4.html', selector: '.m-4' },
-        { url: '/main/m-5.html', selector: '.m-5' },
-        { url: '/main/m-6.html', selector: '.m-6' },
-        { url: '/main/m-7.html', selector: '.m-7' }
+        { url: 'footer.html', selector: '#footer' },
+        { url: 'header.html', selector: '#header' },
+        { url: 'main/m-1.html', selector: '.m-1' },
+        { url: 'main/m-2.html', selector: '.m-2' },
+        { url: 'main/m-3.html', selector: '.m-3' },
+        { url: 'main/m-4.html', selector: '.m-4' },
+        { url: 'main/m-5.html', selector: '.m-5' },
+        { url: 'main/m-6.html', selector: '.m-6' },
+        { url: 'main/m-7.html', selector: '.m-7' }
     ];
 
     let loadCount = 0;
