@@ -46,7 +46,7 @@
 
 
 /* m-3 css */
-.m-3{background:var(--g1); padding:12.5vw 0;}
+.m-3{background:var(--g1); padding:10.42vw 0;}
 .m-3 .site-wrap{background: var(--w); border-radius: 20px; padding:5.21vw;}
 .m-3 .site-wrap .title{display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 6.25vw;}
 .m-3 .site-wrap .title span{font-size:2.86vw; font-weight: bold; line-height: 3.91vw; display: inline-block;}
@@ -60,7 +60,7 @@
 .m-3 .site-wrap .grid-3 .card .card-wrap .text_area .btn{
     width:100%; font-size:1.04vw; padding:0.78vw 0; 
     background:var(--b); color: var(--w); text-align: center; border-radius: 100px;
-    border:1px solid var(--b); transition:.3s;
+    border:1px solid var(--b); transition:.3s; cursor:pointer;
 }
 .m-3 .site-wrap .grid-3 .card .card-wrap .text_area .btn:hover{background:transparent; color:var(--b);}
 
