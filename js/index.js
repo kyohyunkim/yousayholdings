@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (loadCount === sections.length) {
                     headerActive();
                     mainSwiper();
+                    popup();
                 }
             })
             .catch(error => console.error(`Error loading ${url}:`, error));
@@ -92,6 +93,52 @@ document.addEventListener('DOMContentLoaded', function() {
                 clickable: true,
                 },
             });
-        };
+            var popSwiper = new Swiper('.popSwiper', {
+                slidesPerView:3,
+                spaceBetween :20,
+            });
+            
+        }
+        if(window.innerWidth > 1024){
+            var popSwiper = new Swiper('.popSwiper', {
+                slidesPerView:3,
+                spaceBetween :20,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+            var mainSwiper03 = new Swiper('.mainSwiper03', {
+                slidesPerView:3,
+                spaceBetween :20,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }
     }
+
+    function popup(){
+        const popbg = document.querySelector('.popup-bg');
+        const popup = document.querySelector('.popup');
+        const CloseBtn = document.querySelector('.popup .close');
+        const estateViewBtn = document.querySelectorAll('.m-3 .site-wrap .grid-3 .card .card-wrap .text_area .btn');
+        estateViewBtn.forEach((evb)=>{
+            evb.addEventListener('click',function(){
+                popbg.classList.add('active');
+                popup.classList.add('active');
+            })
+        })
+        CloseBtn.addEventListener('click',function(){
+            popbg.classList.remove('active');
+            popup.classList.remove('active');
+        })
+        popbg.addEventListener('click',function(){
+            popbg.classList.remove('active');
+            popup.classList.remove('active');
+        })
+        
+    }
+
 });
